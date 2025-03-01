@@ -18,7 +18,7 @@ app.post('/login',(req,res)=>{
         console.log(user.id);
         if(user.password === req.body.password)
         {
-           const token = jwt.sign({userID:user.id},"Elango@143");
+           const token = jwt.sign({userID:user.id},"wdfdfwdjdjwedmlwedlwdkmlwdmijdq2p3wje8230r02rj2 rp243'r9i249t-4v rtt9t4ttt");  //create the jwt 
            res.status(200).send({token:token});
         }
         else{
@@ -40,7 +40,7 @@ const checktoken =(req,res,next)=>{
     const token = req.headers["authorization"];
     //console.log(token);
     if(token){
-        jwt.verify(token,"Elango@143",(err,decoded)=>{
+        jwt.verify(token,"wdfdfwdjdjwedmlwedlwdkmlwdmijdq2p3wje8230r02rj2 rp243'r9i249t-4v rtt9t4ttt",(err,decoded)=>{  
            if(err)
             {
                 res.status(401).send({meaasge:"first access denied in verfi"})
